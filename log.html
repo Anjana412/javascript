@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    const nm="govind";
+    const ps=1234;
+
+    var name=prompt("ENTER USERNAME")
+    var pass=parseInt(prompt("ENTER THE PASSWORD"))
+
+    if(name==nm && pass==ps){
+        document.write("Successful Login")
+    }
+    else if(name!==nm && pass==ps){
+        document.write("WRONG USERNAME")
+    }
+    else if(name==nm && pass!==ps){
+        document.write("WRONG PASSWORD")
+    }
+    else{
+        document.write("ERROR")
+    }
+   </script> 
+</body>
+</html>

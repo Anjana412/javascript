@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>
+        Create an array of at least 5 song titles (strings). <br><br>
+1.Add a New Song<br>
+ 2.Remove a Song <br>
+3.Get the Length of the Playlist <br>
+4.access the first and last songs <br>
+5.create a single string of song titles separated by commas.<br>
+ 6.Create another array of 3 songs and use concat() to combine it with the original playlist. <br>
+7.Create a nested playlist array and use flat() to flatten it. <br>
+8.remove 2 songs starting from the 2nd index and add 2 new songs in their place. <br>
+arrange the songs alphabetically.<br> 
+10.copy the first 2 songs to the end of the array.
+    </h4>
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+
+
+
+<script>
+// const song = ["Roar","perfect","Twinkle","love yourself","radioactive"];
+// q1,q2
+
+// song.push("believe");
+// song.pop();
+
+// document.getElementById("demo").innerHTML = song;
+
+
+
+
+// q3,q4
+
+// let size = song.length;
+// document.getElementById("demo3").innerHTML = size; 
+
+
+// let first = song[0];
+// let last = song[size-1];
+// document.getElementById("demo4").innerHTML = first;
+// document.getElementById("demo5").innerHTML = last; 
+
+// q5
+// document.getElementById("demo").innerHTML = song.join(" , ");
+
+// q6
+// const songss = ["loser","creep","one"];
+// const combined = song.concat(songss);
+// document.getElementById("demo").innerHTML = combined;
+
+// q7
+
+// const song =[["Roar","perfect","Twinkle"],["loser","creep","one"]];
+// const songstogether = song.flat();
+// document.getElementById("demo").innerHTML = songstogether;
+
+
+// q8
+// const song = ["Roar","perfect","Twinkle","love yourself","radioactive"];
+// document.getElementById("demo").innerHTML = song;
+
+// song. splice(2,3,"loser","creep");
+// document.getElementById("demo2").innerHTML = song;
+
+// q9
+// const song = ["Roar","Perfect","Twinkle","Radioactive"];
+// song.sort();
+// document.getElementById("demo").innerHTML = song;
+
+// q10
+const song = ["Roar","Perfect","loser","creep","one"];
+song.copyWithin(3,0,2);
+document.getElementById("demo").innerHTML = song;
+
+
+</script>
+ 
+
+</body>
+</html>
